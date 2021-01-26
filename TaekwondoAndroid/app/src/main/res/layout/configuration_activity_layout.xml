@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.25"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:id="@+id/configuration_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="@dimen/button_margin"
+            android:gravity="center_vertical"
+            android:text="@string/configuration"
+            android:textColor="@color/white"
+            android:textSize="@dimen/configuration_title_size" />
+
+        <Button
+            android:id="@+id/btnProceed"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/button_margin"
+            android:background="@color/colorAccent"
+            android:gravity="center_vertical"
+            android:text="@string/proceed"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:visibility="invisible"
+            android:textSize="@dimen/configuration_text_size"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.75">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_margin="@dimen/button_margin">
+
+            <LinearLayout
+                android:id="@+id/wifiLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/text_margin"
+                    android:layout_weight="1.5"
+                    android:gravity="center_vertical"
+                    android:text="@string/wifi_network_name"
+                    android:textColor="@color/primary_text"
+                    android:textSize="@dimen/configuration_text_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtNetworkName"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/text_margin"
+                    android:layout_weight="1.5"
+                    android:gravity="center_vertical"
+                    android:text="@string/no_wifi_selected"
+                    android:textColor="@color/primary_text"
+                    android:textSize="@dimen/configuration_text_size" />
+
+                <Button
+                    android:id="@+id/btnChangeWifi"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="@dimen/text_margin"
+                    android:layout_weight="1"
+                    android:background="@color/colorAccent"
+                    android:text="@string/select_wifi"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/configuration_text_size" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/phoneIpLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/wifiLayout"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/text_margin"
+                    android:layout_weight="1.5"
+                    android:gravity="center_vertical"
+                    android:text="@string/phone_ip_adress"
+                    android:textColor="@color/primary_text"
+                    android:textSize="@dimen/configuration_text_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtPhoneIpAddress"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/text_margin"
+                    android:layout_weight="1.5"
+                    android:gravity="center_vertical"
+                    android:text="@string/none"
+                    android:textColor="@color/primary_text"
+                    android:textSize="@dimen/configuration_text_size" />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/imgIPAddressChecked"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_margin="@dimen/text_margin"
+                        android:src="@drawable/unchecked_red" />
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/laptopIpAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/phoneIpLayout"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/text_margin"
+                    android:layout_weight="1.5"
+                    android:gravity="center_vertical"
+                    android:text="@string/laptop_ip_address"
+                    android:textColor="@color/primary_text"
+                    android:textSize="@dimen/configuration_text_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtLaptopAddress"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/text_margin"
+                    android:layout_weight="1.5"
+                    android:gravity="center_vertical"
+                    android:text="@string/none"
+                    android:textColor="@color/primary_text"
+                    android:textSize="@dimen/configuration_text_size" />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/imgLaptopIPAddressChecked"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_margin="@dimen/text_margin"
+                        android:src="@drawable/unchecked_red" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/messageForUserLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/laptopIpAddress"
+                android:layout_margin="@dimen/button_margin">
+
+                <TextView
+                    android:id="@+id/txtMessage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/error_configuration_failed"
+                    android:textColor="@color/primary_text"
+                    android:visibility="invisible"
+                    android:textSize="@dimen/configuration_text_size"
+                    />
+
+                <Button
+                    android:id="@+id/btnTryAgain"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_toRightOf="@+id/txtMessage"
+                    android:background="@color/colorAccent"
+                    android:gravity="center_vertical"
+                    android:text="@string/tryagain"
+                    android:layout_marginLeft="@dimen/button_margin"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:visibility="visible"
+                    android:textSize="@dimen/configuration_text_size"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

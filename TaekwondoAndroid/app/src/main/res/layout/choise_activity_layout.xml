@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/judgeNumber"
+        android:layout_width="match_parent"
+        android:textSize="@dimen/button_text_size"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnTechnique"
+            android:layout_width="200dp"
+            android:layout_height="80dp"
+            android:background="@color/colorAccent"
+            android:gravity="center_vertical"
+            android:text="@string/pattern"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:layout_margin="@dimen/large_margin"
+            android:visibility="visible"
+            android:textSize="@dimen/configuration_text_size"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnFight"
+            android:layout_width="200dp"
+            android:layout_height="80dp"
+            android:background="@color/colorAccent"
+            android:gravity="center_vertical"
+            android:layout_margin="@dimen/large_margin"
+            android:text="@string/sparring"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:visibility="visible"
+            android:textSize="@dimen/configuration_text_size"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</RelativeLayout>

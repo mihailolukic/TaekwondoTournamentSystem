@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btnUndo"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="@string/undo"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/white"
+        android:textColor="@color/primary_text"
+        android:textSize="20dp"
+        android:layout_marginTop="@dimen/button_margin"
+        android:gravity="center"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="2">
+
+        <RelativeLayout
+            android:id="@+id/relativeRed"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary">
+
+            <RelativeLayout
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:padding="@dimen/padding">
+
+                <Button
+                    android:id="@+id/btnRed1"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/button_margin"
+                    android:background="@drawable/circle_button"
+                    android:text="@string/button1"
+                    android:textColor="@color/primary_text"
+                    android:textSize="@dimen/button_text_size" />
+
+                <Button
+                    android:id="@+id/btnRed2"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/circle_button"
+                    android:text="@string/button2"
+                    android:textColor="@color/primary_text"
+                    android:textSize="@dimen/button_text_size" />
+
+                <Button
+                    android:id="@+id/btnRed3"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/button_margin"
+                    android:background="@drawable/circle_button"
+                    android:text="@string/button3"
+                    android:textColor="@color/primary_text"
+                    android:textSize="@dimen/button_text_size" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/txtRedScore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="8"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/text_size" />
+
+            <RelativeLayout
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:padding="@dimen/padding">
+
+                <Button
+                    android:id="@+id/btnRed5"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/circle_button"
+                    android:text="@string/button5"
+                    android:textColor="@color/primary_text"
+                    android:textSize="@dimen/button_text_size" />
+
+                <Button
+                    android:id="@+id/btnRed4"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/button_margin"
+                    android:background="@drawable/circle_button"
+                    android:text="@string/button4"
+                    android:textColor="@color/primary_text"
+                    android:textSize="@dimen/button_text_size" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeBlue"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorAccent">
+
+            <RelativeLayout
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:padding="@dimen/padding">
+
+                <Button
+                    android:id="@+id/btnBlue1"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/button_margin"
+                    android:background="@drawable/circle_button"
+                    android:text="@string/button1"
+                    android:textColor="@color/primary_text"
+                    android:textSize="@dimen/button_text_size" />
+
+                <Button
+                    android:id="@+id/btnBlue2"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/circle_button"
+                    android:text="@string/button2"
+                    android:textColor="@color/primary_text"
+                    android:textSize="@dimen/button_text_size" />
+
+                <Button
+                    android:id="@+id/btnBlue3"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/button_margin"
+                    android:background="@drawable/circle_button"
+                    android:text="@string/button3"
+                    android:textSize="@dimen/button_text_size" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/txtBlueScore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="8"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/text_size" />
+
+            <RelativeLayout
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:padding="@dimen/padding">
+
+                <Button
+                    android:id="@+id/btnBlue5"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/circle_button"
+                    android:text="@string/button5"
+                    android:textColor="@color/primary_text"
+                    android:textSize="@dimen/button_text_size" />
+
+                <Button
+                    android:id="@+id/btnBlue4"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/button_margin"
+                    android:background="@drawable/circle_button"
+                    android:text="@string/button4"
+                    android:textColor="@color/primary_text"
+                    android:textSize="@dimen/button_text_size" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>
